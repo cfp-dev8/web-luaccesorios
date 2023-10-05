@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../fuentes/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'pacifico';
+    src: url(../fuentes/Pacifico-Regular.ttf);
+}
+body{
+    width: 100%;
+    height: 200px;
+    max-width: 1920px;
+    min-width: 360px;
+    margin: 0 auto;
+    font-family: 'robotoblack';
+}
+
+/* *************** -- HEADER Y NAV -- *************** */
+nav{
+    width: 100%;
+    height: 100px;
+    background: rgb(251, 251, 252);
+    position: fixed;
+    z-index: 10;
+    max-width:1920px;
+}
+#logo-nav{
+    width: auto;
+    height: 80px;
+    margin: 10px 40px;
+}
+#menu{
+    width: 65%;
+    float: right;
+    list-style: none;
+    
+}
+#menu a{
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px 2%;
+    text-align: center;
+    background: rgb(178 220 218);
+    color: rgb(0 0 0);
+    border-radius: 20px;
+    float: left;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'robotoblack';
+    font-weight: 300;
+    transition: .5s;
+}
+
+#menu a:hover{
+    opacity: .5;
+    letter-spacing: 0.7px;
+}
+
+#btn-menu{
+    display: none;
+}
+nav label{
+    display: none;
+}
+header{
+    width:100%;
+}
+#portada-image {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+/* ***************--SECCION PRODUCTOS--*************** */
+/* Estilos para la sección de productos */
+#productos {
+    width: 100%;
+    background-color: white;
+    padding: 40px 0px;
+    text-align: center; 
+}
+
+.h3-titulo-productos {
+    width: 40%;
+    margin:10px 450px -90px 412px;
+    font-size: 30px;
+    font-weight: normal;
+    background-color: white;
+    border-style: double; 
+    border-radius: 20px;   
+    transition: .5s;
+    margin-bottom: 20px; 
+}
+
+.h3-productos{    
+    width: 100%;
+    height: 85px;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+    color: black;
+    font-family: 'robotoblack';
+    font-weight: 300;
+    transition: .5s;
+}
+.h3-productos:hover{
+opacity: .5;
+letter-spacing: 2px;
+color: rgb(178 220 218);
+}
+.h3-titulo-productos:hover{
+    opacity: .5;
+    letter-spacing: 2px;
+    color: rgb(178 220 218);
+    }
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.tarjeta-producto {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-producto h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+/* ***************--SECCION CONTACTO--*************** */
+
+#contacto {
+    width: 100%;
+    height: 600px;
+    display: block;
+    justify-content: center;  
+    align-items: center;
+    background-color: rgb(252 237 234);
+    padding: 40px 0px;
+}
+.info-contacto{
+    width: 27%;
+    margin: 148px 180px;
+    float:left;
+    height: 420px;
+}
+.h3-contacto{    
+    width: 100%;
+    height: 85px;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+    color: black;
+    font-family: 'robotoblack';
+    font-weight: 300;
+    transition: .5s;
+}
+.h3-contacto:hover{
+opacity: .5;
+letter-spacing: 2px;
+color: rgb(178 220 218);
+}
+.h3-titulo-contacto {
+    width: 40%;
+    margin:10px 450px -90px 412px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    background-color: white;
+    border-style: double; 
+    border-radius: 20px;   
+    transition: .5s;
+  }
+  .h3-titulo-contacto:hover{
+    opacity: .5;
+    letter-spacing: 2px;
+    color: rgb(178 220 218);
+    }
+#imgcontacto{
+        width: 33%;
+        height: 33%;
+        margin: 175px 33px;
+        float: left;
+}
+.imgcontacto{
+    width: 90%;
+    height: 155%;
+    border-radius: 60px;
+}
+.icon-contacto{
+    width: 17px;
+}
+/* ***************--FOOTER--***************  */
+footer{
+    width:100%;
+    height: 100px;
+    float:left;
+    text-align: center;
+}
+.img-redes{
+    width:100px;
+    margin:50px 10px;
+    transition: .3s;
+
+}
+.img-redes:hover{
+    opacity: .5;
+}
+.footer-text {
+    font-size: 14px;
+    color: #666;
+    padding: 40px;
+}
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* *************** BOTON WHATSAPP ***************  */
+.btn_wp{
+    width: 80px;
+    position: fixed;
+    float: left;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    animation-name: animacion1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.img-wp{
+    width: 100%;
+}
+.btn_wp:hover{
+    opacity: .5;
+}
+
+/* Media query para dispositivos pequeños */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    nav {
+        height: auto;
+    }
+    #logo-nav {
+        margin-left: 132px;
+        margin-top: 10px;
+    }
+    #menu {
+        width: 85%;
+        margin-left: 35px;
+        float: none;
+    }
+    #menu a {
+        width: 20%;
+        font-size: 8px;
+    }
+    #portada-image {
+        height: 500px;
+    }
+    .h3-titulo-productos, .h3-titulo-contacto {
+        margin: 0px auto 31px;
+        width: 40%;
+    }
+    .h3-contacto {
+        width: 200%;
+        font-size: 8px;  
+    }
+    .info-contacto {
+        margin: 0px 76px -10px;
+    }
+    #contacto {
+        height: 530px;
+    }
+    .imgcontacto {
+        display: none;
+    }
+    #imgcontacto {
+        margin: 0px;
+        float: none;
+    }
+    .img-redes {
+        width: 55px;
+    }
+    .img-wp {
+        width: 70%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    nav {
+        height: auto;
+    }
+    #logo-nav {
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+    #menu {
+        width: 85%;
+        margin-left: 35px;
+        float: none;
+    }
+    #menu a {
+        width: 20%;
+    }
+    #portada-image {
+        height: 500px;
+    }
+    .h3-titulo-productos, .h3-titulo-contacto {
+        margin: 0px auto 31px;
+        width: 40%;
+    }
+    .h3-contacto {
+        width: 200%;
+        font-size: 10px;  
+    }
+    .info-contacto {
+        margin: 0px 86px -10px;
+    }
+    #contacto {
+        height: 530px;
+    }
+    .imgcontacto {
+        display: none;
+    }
+    #imgcontacto {
+        margin: 0px;
+        float: none;
+    }
+    .img-redes {
+        width: 55px;
+    }
+    .img-wp {
+        width: 70%;
+        margin-left: 20px;
+    }
+}
+
+/* Media query para dispositivos pequeños */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    nav {
+        height: auto;
+    }
+    #logo-nav {
+        height: 60px;
+        margin-left: 176px;
+    }
+    #menu {
+        width: 100%;
+        margin-left: 52px;
+        float: none;
+    }
+    .h3-titulo-productos, .h3-titulo-contacto {
+        margin: 0px auto 31px;
+        width: 40%;
+    }
+    .h3-contacto {
+        width: 200%;
+        font-size: 10px;  
+    }
+    .info-contacto {
+        margin: 0px 100px 5px;
+    }
+    .imgcontacto {
+        display: none;
+    }
+    #imgcontacto {
+        margin: 0px;
+        float: none;
+    }
+    .img-redes {
+        width: 55px;
+    }
+    .img-wp {
+        width: 70%;
+        margin-left: 20px;
+    }
+}
+
+/* Media query para dispositivos medianos */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #portada-image {
+        width: 100%;
+    }
+    .h3-titulo-contacto,
+    .h3-titulo-productos {
+        width: 22%;
+        margin: 10px 302px;
+    }
+    .h3-contacto {
+        width: 155%;
+        font-size: 10px;  
+    }
+    .info-contacto {
+        margin: 44px 222px 37px;
+    }
+    .imgcontacto {
+        display: none;
+    }
+    #imgcontacto {
+        margin: 0px;
+        float: none;
+    }
+    .img-redes {
+        width: 60px;
+    }
+    .img-wp {
+        width: 80%;
+    }
+}
+/* Media query para dispositivos medianos */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    #portada-image {
+        width: 100%;
+    }
+    #contacto {
+        height: 500px;
+    }
+    .h3-titulo-contacto, .h3-titulo-productos {
+        width: 30%;
+        margin: 10px 370px 40px;
+    }
+    .contenedor-tarjetas {
+        margin: 0 20px;
+    }
+    .h3-contacto {
+        width: 150%;
+    }
+    
+    .img-wp {
+        width: 80%;
+    }
+    .info-contacto {
+        width: 33%;
+        float: none;
+        text-align: center;
+        margin: 0;
+        margin-left: 266px;
+    }
+    #imgcontacto {
+        display: none;
+        margin: 0px;
+        float: none;
+    }   
+}
+
+/* Media query para dispositivos grandes */
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    .h3-titulo-productos,
+    .h3-titulo-contacto {
+        margin: 10px 257px 11px 362px;
+    }
+    .info-contacto {
+        margin: 53px 180px -34px;
+    }
+    #imgcontacto {
+        margin: 113px 33px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .h3-titulo-productos,
+    .h3-titulo-productos {
+        margin: 10px 257px 11px 432px;
+    }
+    .info-contacto {
+        margin: 124px 148px 5px 219px;
+    }
+    #imgcontacto {
+        margin: 170px 33px;
+    }
+}
